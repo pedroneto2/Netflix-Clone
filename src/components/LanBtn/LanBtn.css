@@ -1,0 +1,49 @@
+@media (max-width: 550px) {
+  .language-select-container select {
+    width: 113px;
+    height: 28px;
+  }
+
+  .language-select-container {
+    margin-right: -5px;
+  }
+}
+
+@media (min-width: 551px) {
+  .language-select-container select {
+    width: 113px;
+    height: 36px;
+  }
+
+  .language-select-container {
+    margin-right: 15px;
+  }
+}
+
+.language-select-container select {
+  margin: 0;
+  appearance: none;
+  border-radius: 2px;
+  background-color: transparent;
+  padding-left: 25px;
+  font-size: 0.9em;
+}
+
+.language-select-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.language-icon-globe {
+  position: relative;
+  left: 22px;
+  width: 13px;
+}
+
+.language-icon-arrow {
+  position: relative;
+  transform: scale(1.4);
+  right: 22px;
+}

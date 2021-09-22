@@ -1,0 +1,141 @@
+@media (max-width: 551px) {
+  .download-feature-content > h3 {
+    font-size: 0.9em;
+  }
+
+  .download-feature-content > p {
+    font-size: 0.8em;
+  }
+
+  .download-feature-container > img {
+    width: 12%;
+  }
+
+  .download-feature-container {
+    padding: 5px 12px;
+  }
+
+  .download-feature-container::after {
+    height: 3em;
+  }
+}
+
+@media (min-width: 551px) {
+  .download-feature-content > h3 {
+    margin: 0 0 2px 0;
+    font-size: 1em;
+  }
+
+  .download-feature-content > p {
+    font-size: 0.9em;
+  }
+
+  .download-feature-container > img {
+    width: 18%;
+  }
+
+  .download-feature-container {
+    padding: 8px 12px;
+  }
+
+  .download-feature-container::after {
+    height: 3.75em;
+  }
+}
+
+@media (max-width: 950px) {
+  .feature-video-01 {
+    max-height: 63%;
+  }
+
+  .feature-image-01,
+  .feature-video-01 {
+    margin-top: -10%;
+  }
+
+  .feature-image-02 {
+    margin-top: -5%;
+  }
+}
+
+@media (min-width: 951px) {
+  .feature-video-01 {
+    max-height: 55%;
+  }
+}
+
+.feature-video-02 {
+  max-height: 45%;
+}
+
+.feature-video-01 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -4%);
+}
+
+.feature-video-02 {
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 15%;
+}
+
+.feature-image-01,
+.feature-image-03,
+.feature-image-04 {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  max-height: 425px;
+}
+
+.feature-image-02 {
+  height: 100%;
+  width: 100%;
+  max-width: 505px;
+}
+
+.download-feature-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  bottom: 5%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.75em;
+  width: 63%;
+  min-width: 235px;
+  max-width: 301px;
+}
+
+.download-feature-container > img {
+  margin-right: 20px;
+}
+
+.download-feature-content {
+  width: 60%;
+}
+
+.download-feature-content > h3 {
+  color: white;
+  margin: 0 0 2px 0;
+}
+
+.download-feature-content > p {
+  color: #0071eb;
+  margin: 0px;
+}
+
+.download-feature-container::after {
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  width: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  background-size: 100%;
+  content: ".";
+}

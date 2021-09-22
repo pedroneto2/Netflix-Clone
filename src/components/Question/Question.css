@@ -1,0 +1,69 @@
+@media (max-width: 550px) {
+  .MuiSvgIcon-root {
+    font-size: 1.8em !important;
+  }
+
+  .MuiTypography-root {
+    font-size: 1em !important;
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 21px !important;
+  }
+
+  .MuiAccordionSummary-root {
+    padding: 11px 40px 11px 22px !important;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 551px) {
+  .MuiSvgIcon-root {
+    font-size: 2em !important;
+  }
+
+  .MuiTypography-root {
+    font-size: 1.2em !important;
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 21px !important;
+  }
+
+  .MuiAccordionSummary-root {
+    padding: 12px 44px 12px 24px !important;
+  }
+}
+
+@media (min-width: 951px) {
+  .MuiSvgIcon-root {
+    font-size: 2.5em !important;
+  }
+
+  .MuiTypography-root {
+    font-size: 1.6em !important;
+  }
+
+  .MuiTypography-paragraph {
+    margin-bottom: 1.2em !important;
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 31px !important;
+  }
+
+  .MuiAccordionSummary-root {
+    padding: 14px 57px 14px 31px !important;
+  }
+}
+
+.MuiAccordionDetails-root {
+  margin-top: 1px;
+}
+
+.MuiPaper-root {
+  background: transparent !important;
+}
+
+.MuiAccordionSummary-content {
+  margin: 0 !important;
+}
