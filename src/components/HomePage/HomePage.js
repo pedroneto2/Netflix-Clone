@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from "react";
 
-const HomePage = ()=>{
-    return(
-        <div className='home-page-container'>
-            HOME PAGE
-        </div>
-    )
-}
+import AuthCtx from "../../store/context/AuthCtx";
 
-export default HomePage
+const HomePage = () => {
+  const { handleLogout } = useContext(AuthCtx);
+
+  return (
+    <div className="home-page-container">
+      HOME PAGE
+      <br />
+      <button onClick={handleLogout}>Logout</button>
+    </div>
+  );
+};
+
+export default HomePage;

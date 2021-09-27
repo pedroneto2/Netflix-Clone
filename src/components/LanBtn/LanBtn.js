@@ -5,7 +5,7 @@ import "./LanBtn.css";
 import { FaGlobe } from "react-icons/fa";
 import { RiArrowDownSFill } from "react-icons/ri";
 
-import LanguageCtx from "../LanguageCtx";
+import LanguageCtx from "../../store/context/LanguageCtx";
 
 import PropTypes from "prop-types"; // storybook dependency
 
@@ -27,8 +27,9 @@ const LanBtn = ({
   width,
   height,
   fontSize,
-  lanPack,
-  lan,
+  globeIconMaxHeight,
+  lanPack, // for storybook
+  lan, // for storybook
 }) => {
   const { languagePack, language, setLanguage } = useContext(LanguageCtx) || {
     languagePack: lanPack,
@@ -37,7 +38,10 @@ const LanBtn = ({
 
   return (
     <div className="language-select-container" style={{ fontSize: fontSize }}>
-      <FaGlobe style={{ color: textColor }} className="language-icon-globe" />
+      <FaGlobe
+        style={{ color: textColor, height: globeIconMaxHeight }}
+        className="language-icon-globe"
+      />
       <select
         style={{
           color: textColor,
@@ -68,6 +72,7 @@ LanBtn.propTypes = {
   width: PropTypes.string,
   height: PropTypes.string,
   fontSize: PropTypes.string,
+  globeIconMaxHeight: PropTypes.string,
   lanPack: PropTypes.object,
   lan: PropTypes.string,
 };
@@ -76,7 +81,6 @@ LanBtn.defaultProps = {
   selectBgColor: "grey",
   textColor: "white",
   width: "113px",
-  height: "36px",
   fontSize: "0.9em",
   lanPack: { Português: "", English: "" },
   lan: "Português",

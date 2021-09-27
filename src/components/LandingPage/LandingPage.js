@@ -4,6 +4,7 @@ import "./LandingPage.css";
 import Header from "../Header/Header";
 import FeatureBox from "../FeatureBox/FeatureBox";
 import FAQ from "../FAQ/FAQ";
+import Footer from "../Footer/Footer";
 
 import logo from "../../imgs/logos/netflix-logo.png";
 import featureImg01 from "../../imgs/features/tv.png";
@@ -14,10 +15,10 @@ import feature03Img01 from "../../imgs/features/devices.png";
 import feature03Video01 from "../../videos/features/video02.m4v";
 import feature04Img01 from "../../imgs/features/kids.png";
 
-import LanguageCtx from "../LanguageCtx";
+import LanguageCtx from "../../store/context/LanguageCtx";
 
 const LandingPage = () => {
-  const { languagePack, language, setLanguage } = useContext(LanguageCtx);
+  const { languagePack, language } = useContext(LanguageCtx);
 
   return (
     <div className="landing-page-container">
@@ -27,12 +28,14 @@ const LandingPage = () => {
         textColor="white"
         buttonBgColor="red"
         borderColor="#222"
+        bgColorOverlay01="rgba(0, 0, 0, 0.4)"
+        bgColorOverlay02="linear-gradient(to top,rgba(0, 0, 0, 0.8) 0,rgba(0, 0, 0, 0) 40%,rgba(0, 0, 0, 0) 75%,rgba(0, 0, 0, 0.8)100%)"
         bgImage="https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/a00b1fb9-c99b-4016-8d52-ba364c881a20/BR-pt-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-        loginText={languagePack[language].header.login}
         introText01={languagePack[language].header.introText01}
         introText02={languagePack[language].header.introText02}
         getStartedBtn={languagePack[language].getStarted.getStartedBtn}
         getStartedText={languagePack[language].getStarted.text}
+        lanGlobeIconMaxHeight="12px"
       />
       <FeatureBox
         textColor="white"
@@ -110,6 +113,19 @@ const LandingPage = () => {
         getStartedText={languagePack[language].getStarted.text}
         textColor="white"
         buttonBgColor="red"
+      />
+      <Footer
+        phoneNumber={
+          { Português: "0800-761-4631", English: "0800-761-4632" }[language]
+        }
+        doubtText={languagePack[language].footer.doubtsText}
+        links={languagePack[language].footer.links}
+        textColor="#757575"
+        bgColor="black"
+        lanBtnWidth="154px"
+        lanBtnHeight="53px"
+        lanBtnFontSize="1.2em"
+        lanGlobeIconMaxHeight="15px"
       />
     </div>
   );

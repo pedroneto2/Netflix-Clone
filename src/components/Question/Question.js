@@ -39,7 +39,7 @@ const Question = ({ bgColor, textColor, detailText, summaryText }) => {
           }}
         >
           {detailText.map((text, index) => (
-            <Typography paragraph={detailText[index + 1]} key={index}>
+            <Typography paragraph={!!detailText[index + 1]} key={index}>
               {text}
             </Typography>
           ))}

@@ -6,7 +6,8 @@
       "getStartedBtn": "Get Started"
     },
     "header": {
-      "login": "Login",
+      "login": "Log In",
+      "logout": "Log Out",
       "introText01": "Unlimited movies, TV shows, and more.",
       "introText02": "Watch anywhere. Cancel anytime."
     },
@@ -70,6 +71,36 @@
           ]
         }
       ]
+    },
+    "footer": {
+      "doubtsText": "Questions? Call ",
+      "links": [
+        "FAQ",
+        "Help Center",
+        "Account",
+        "Media Center",
+        "Investor Relations",
+        "Jobs",
+        "Redeem Gift Cards",
+        "Buy Gift Cards",
+        "Ways to Watch",
+        "Terms of Use",
+        "Privacy",
+        "Cookie Preferences",
+        "Corporate Information",
+        "Contact Us",
+        "Speed Test",
+        "Legal Notices",
+        "Only on Netflix"
+      ]
+    },
+    "login": {
+      "signin": "Sign In",
+      "emailText": "Email",
+      "passwordText": "Password",
+      "signinBtn": "Sign In",
+      "rememberMe": "Remember me",
+      "help": "Need help?"
     }
   },
   "Português": {
@@ -80,6 +111,7 @@
     },
     "header": {
       "login": "Entrar",
+      "logout": "Sair",
       "introText01": "Filmes, séries e muito mais. Sem limites.",
       "introText02": "Assista onde quiser. Cancele quando quiser."
     },
@@ -143,6 +175,36 @@
           ]
         }
       ]
+    },
+    "footer": {
+      "doubtsText": "Dúvidas? Ligue ",
+      "links": [
+        "Perguntas frequentes",
+        "Centro de ajuda",
+        "Conta",
+        "Imprensa",
+        "Relações com investidores",
+        "Carreiras",
+        "Resgatar cartão pré-pago",
+        "Comprar cartão pré-pago",
+        "Formas de assistir",
+        "Termos de uso",
+        "Privacidade",
+        "Preferências de cookies",
+        "Informações corporativas",
+        "Entre em contato",
+        "Teste de velocidade",
+        "Legal Notices",
+        "Avisos legais"
+      ]
+    },
+    "login": {
+      "signin": "Entrar",
+      "emailText": "Email",
+      "passwordText": "Senha",
+      "signinBtn": "Entrar",
+      "rememberMe": "Lembre-se de mim",
+      "help": "Precisa de ajuda?"
     }
   }
 }

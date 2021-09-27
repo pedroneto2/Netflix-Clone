@@ -1,0 +1,40 @@
+@media (max-width: 450px) {
+  .netflix-logo {
+    width: 75px;
+    height: 23px;
+    top: 16px;
+    left: 12px;
+  }
+
+  .login-page-container {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 451px) {
+  .netflix-logo {
+    width: 167px;
+    height: 50px;
+    top: 15px;
+    left: 40px;
+  }
+
+  .login-page-container {
+    min-height: 1100px;
+  }
+}
+
+.netflix-logo {
+  position: absolute;
+}
+
+.login-page-container {
+  height: 100vh;
+  position: relative;
+}
+
+.login-page-container .footer-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

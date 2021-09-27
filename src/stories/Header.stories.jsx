@@ -18,13 +18,17 @@ export default {
     textColor: { control: "color" },
     buttonBgColor: { control: "color" },
     borderColor: { control: "color" },
+    bgColorOverlay01: { control: "color" },
+    bgColorOverlay02: { control: "text" },
+    imgLogoTag: {
+      control: { type: "text" },
+    },
   },
 };
 const Template = ({ imgLogoTag, ...rest }) => {
   const imgTag = tranformToTag(imgLogoTag);
-
   return <Header imgLogoTag={imgTag} {...rest} />;
 };
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const PrimaryColors = Template.bind({});
+PrimaryColors.args = {};

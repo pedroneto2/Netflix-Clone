@@ -1,0 +1,141 @@
+#remember-me::placeholder {
+  background-color: black;
+  color: black;
+}
+
+.remember-me-container > span {
+  margin-left: 2px;
+}
+
+#remember-me:checked:after {
+  content: "\2713";
+  font-size: 20px;
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  color: black;
+}
+
+#remember-me {
+  margin-right: 2px;
+  -webkit-appearance: none;
+  background-color: #b3b3b3;
+  border: none;
+  padding: 9px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.remember-me-container {
+  display: flex;
+}
+
+.form-details > a {
+  text-decoration: none;
+  color: white;
+}
+
+.form-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.form-container > button {
+  color: white;
+  background: red;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-size: 1em;
+  height: 50px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.form-container > label > input:focus {
+  outline: none;
+}
+
+.form-container > label > input {
+  width: 100%;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  background: #e8f0fe;
+  height: 30px;
+}
+
+.form-container > label > span {
+  display: block;
+  color: black;
+  background: #e8f0fe;
+  border-radius: 4px 4px 0 0;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 0.7em;
+  transform: translateY(1px);
+}
+
+.form-container > label {
+  width: 100%;
+}
+
+.card-container > h2 {
+  margin-bottom: 28px;
+  font-size: 2em;
+}
+
+.card-container {
+  font-size: 1em;
+  color: white;
+}
+
+.form-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  box-sizing: content-box;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.login-card-container {
+  min-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 451px) {
+  .card-container {
+    padding: 48px 68px;
+    width: 314px;
+    height: 560px;
+  }
+
+  .login-card-container {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 25px 0 25px;
+    height: 100%;
+    background: rgba(0, 0, 0);
+  }
+
+  .login-card-container {
+    height: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.styled-background-container {
+  min-width: 320px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 8px solid;
+}
+
+.styled-background-image {
+  min-width: 320px;
+}

@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./FeatureBox.css";
+
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import PropTypes from "prop-types"; // storybook dependency
 
-const insertElements = (elements, reverse) => {
-  reverse && window.innerWidth > 950 && elements.reverse();
+const insertElements = (elements, reverse, matches) => {
+  reverse && matches && elements.reverse();
   return elements;
 };
 
@@ -17,7 +19,7 @@ const FeatureBox = ({
   reverse,
   children,
 }) => {
-  const [cancelReverse, setCancelReverse] = useState(!reverse);
+  const matches = useMediaQuery("(min-width:950px)");
 
   const elements = [
     <div
@@ -33,26 +35,13 @@ const FeatureBox = ({
     </div>,
   ];
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (reverse) {
-        if (window.innerWidth <= 950 && !cancelReverse) {
-          setCancelReverse(true);
-        } else if (window.innerWidth > 950 && cancelReverse) {
-          setCancelReverse(false);
-        }
-      }
-    };
-    window.addEventListener("resize", handleResize);
-  }, [cancelReverse]);
-
   return (
     <div
       className="feature-box-container"
       style={{ backgroundColor: bgColor, borderColor: borderColor }}
     >
       <div className="feature-content-container">
-        {insertElements(elements, reverse)}
+        {insertElements(elements, reverse, matches)}
       </div>
     </div>
   );
@@ -68,7 +57,6 @@ FeatureBox.propTypes = {
   textColor: PropTypes.string,
   bgColor: PropTypes.string,
   reverse: PropTypes.bool,
-  children: PropTypes.string,
 };
 
 FeatureBox.defaultProps = {

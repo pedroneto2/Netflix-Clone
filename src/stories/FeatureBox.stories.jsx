@@ -28,9 +28,9 @@ export default {
       options: [true, false],
       control: { type: "boolean" },
     },
-  },
-  children: {
-    control: { type: "text" },
+    children: {
+      control: { type: "text" },
+    },
   },
 };
 

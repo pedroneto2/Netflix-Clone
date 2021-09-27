@@ -1,0 +1,32 @@
+@media (max-width: 550px) {
+  .login-button {
+    font-size: 0.9em;
+    margin-right: -5px;
+    width: 65px;
+    height: 27px;
+  }
+}
+
+@media (min-width: 551px) {
+  .login-button {
+    margin-right: 25px;
+    font-size: 1em;
+    width: 75px;
+    height: 34px;
+  }
+}
+
+@media (min-width: 951px) {
+  .login-button {
+    margin-right: 50px;
+    width: 85px;
+  }
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+}
