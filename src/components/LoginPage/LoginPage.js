@@ -27,6 +27,10 @@ const LoginPage = () => {
           signinBtn={languagePack[language].login.signinBtn}
           rememberMe={languagePack[language].login.rememberMe}
           help={languagePack[language].login.help}
+          hide={languagePack[language].login.hide}
+          show={languagePack[language].login.show}
+          emailError={languagePack[language].login.emailError}
+          passwordError={languagePack[language].login.passwordError}
         />
         <Footer
           phoneNumber={

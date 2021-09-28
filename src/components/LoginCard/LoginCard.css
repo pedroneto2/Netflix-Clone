@@ -1,3 +1,45 @@
+.login-card-container .incorrect-password > p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.login-card-container .incorrect-password {
+  color: white;
+  background-color: #e87c03;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-bottom: 16px;
+}
+
+.login-card-container .MuiFormHelperText-root {
+  background: transparent !important;
+  margin: 0 0 10px 0 !important;
+  color: #ed6c02 !important;
+}
+
+.login-card-container .MuiInputLabel-root {
+  color: #8c867b !important;
+}
+
+.login-card-container .MuiFilledInput-root {
+  background: #333 !important;
+  color: white;
+  border-radius: 5px;
+}
+
+.login-card-container .MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+.login-card-container .MuiIconButton-root {
+  font-size: 0.8em;
+  color: #8c867b;
+  margin-right: 1px;
+}
+
 #remember-me::placeholder {
   background-color: black;
   color: black;
@@ -42,6 +84,10 @@
   font-size: 0.8em;
 }
 
+.form-container > button:active {
+  background: rgba(200, 102, 150, 0.8);
+}
+
 .form-container > button {
   color: white;
   background: red;
@@ -52,36 +98,6 @@
   border: none;
   width: 100%;
   border-radius: 4px;
-}
-
-.form-container > label > input:focus {
-  outline: none;
-}
-
-.form-container > label > input {
-  width: 100%;
-  border: none;
-  border-radius: 0 0 4px 4px;
-  margin-bottom: 16px;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  background: #e8f0fe;
-  height: 30px;
-}
-
-.form-container > label > span {
-  display: block;
-  color: black;
-  background: #e8f0fe;
-  border-radius: 4px 4px 0 0;
-  padding-left: 20px;
-  padding-top: 5px;
-  font-size: 0.7em;
-  transform: translateY(1px);
-}
-
-.form-container > label {
-  width: 100%;
 }
 
 .card-container > h2 {

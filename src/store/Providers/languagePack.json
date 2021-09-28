@@ -100,7 +100,11 @@
       "passwordText": "Password",
       "signinBtn": "Sign In",
       "rememberMe": "Remember me",
-      "help": "Need help?"
+      "help": "Need help?",
+      "hide": "HIDE",
+      "show": "SHOW",
+      "emailError": "Please enter a valid email.",
+      "passwordError": "Your password must contain between 4 and 60 characters."
     }
   },
   "Português": {
@@ -204,7 +208,11 @@
       "passwordText": "Senha",
       "signinBtn": "Entrar",
       "rememberMe": "Lembre-se de mim",
-      "help": "Precisa de ajuda?"
+      "help": "Precisa de ajuda?",
+      "hide": "MOSTRAR",
+      "show": "OCULTAR",
+      "emailError": "Informe um email válido.",
+      "passwordError": "A senha deve ter entre 4 e 60 caracteres."
     }
   }
 }
