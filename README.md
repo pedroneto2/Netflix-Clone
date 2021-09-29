@@ -3,11 +3,11 @@
 ## You can access the deployment of this project through this link: https://pedro-netflix-clone.netlify.app/
 
 ## features:
-              * responsive
-              * fake Login
-              * private route /home
-              * storybook
-              * LoginCard.js component tested with jest
+* responsive
+* fake Login
+* private route /home
+* storybook
+* LoginCard.js component tested with jest
 
 
 ## Getting Started with Create React App
