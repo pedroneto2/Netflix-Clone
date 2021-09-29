@@ -23,6 +23,7 @@ const FAQ = ({
   FAQText,
   getStartedBtn,
   getStartedText,
+  emailError,
   textColor,
   buttonBgColor,
 }) => {
@@ -36,6 +37,7 @@ const FAQ = ({
         <GetStarted
           getStartedBtn={getStartedBtn}
           getStartedText={getStartedText}
+          emailError={emailError}
           textColor={textColor}
           buttonBgColor={buttonBgColor}
         />

@@ -30,3 +30,7 @@
   border: none;
   border-radius: 3px;
 }
+
+.login-button:active {
+  background: rgba(200, 102, 150, 0.8) !important;
+}

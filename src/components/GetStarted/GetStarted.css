@@ -6,8 +6,11 @@
     line-height: 1.3em;
   }
 
-  .email-input {
+  .email-container .MuiFilledInput-root {
     height: 48px;
+  }
+
+  .email-container .MuiFilledInput-root {
     border-radius: 2px;
   }
 
@@ -27,7 +30,26 @@
 
   .email-button-icon {
     margin-left: 3px;
-    transform: translateY(2px);
+  }
+}
+
+@media (max-width: 740px) {
+  .email-container .MuiFilledInput-root {
+    font-size: 1em;
+  }
+
+  .email-container .MuiInputLabel-root {
+    font-size: 0.9em;
+  }
+
+  .email-container .MuiFormHelperText-root {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 741px) {
+  .email-container .MuiFilledInput-root {
+    font-size: 1.2em;
   }
 }
 
@@ -49,10 +71,9 @@
 
   .email-button-icon {
     margin-left: 3px;
-    transform: translateY(2px);
   }
 
-  .email-input {
+  .email-container .MuiFilledInput-root {
     border-radius: 2px;
   }
 }
@@ -65,7 +86,7 @@
     max-width: 500px;
   }
 
-  .email-input {
+  .email-container .MuiFilledInput-root {
     height: 48px;
   }
 }
@@ -76,11 +97,19 @@
     max-width: 450px;
     font-size: 1.4em;
   }
+
+  .email-container .MuiInputLabel-root {
+    top: 5px;
+  }
 }
 
 @media (max-width: 1450px) and (min-width: 741px) {
-  .email-input {
+  .email-container .MuiFilledInput-root {
     height: 60px;
+  }
+
+  .email-container .MuiFormHelperText-root {
+    font-size: 1.1em;
   }
 }
 
@@ -92,7 +121,11 @@
     margin-bottom: 25px;
   }
 
-  .email-input {
+  .email-container .MuiInputLabel-root {
+    top: 5px;
+  }
+
+  .email-container .MuiFilledInput-root {
     border-radius: 2px 0 0 2px;
   }
 
@@ -109,7 +142,15 @@
   .email-button-icon {
     margin-left: 10px;
     margin-right: 18px;
-    transform: translateY(4px);
+  }
+
+  .email-container .MuiFormHelperText-root {
+    background: transparent !important;
+    margin: 0 0 10px 0 !important;
+    color: #ed6c02 !important;
+    font-size: 1.2em;
+    position: absolute;
+    top: 65px;
   }
 }
 
@@ -121,9 +162,13 @@
     margin-bottom: 25px;
   }
 
-  .email-input {
-    border-radius: 2px 0 0 2px;
+  .email-container .MuiInputLabel-root {
+    top: 10px;
+  }
+
+  .email-container .MuiFilledInput-root {
     height: 70px;
+    border-radius: 2px 0 0 2px;
   }
 
   .email-button {
@@ -138,7 +183,12 @@
   .email-button-icon {
     margin-left: 12px;
     margin-right: 20px;
-    transform: translateY(4px);
+  }
+
+  .email-container .MuiFormHelperText-root {
+    font-size: 1.2em;
+    position: absolute;
+    top: 70px;
   }
 }
 
@@ -154,9 +204,29 @@
   width: 80%;
 }
 
-.email-input {
-  width: 100%;
-  border: none;
-  font-size: 1.1em;
+.email-container .MuiTextField-root {
   max-width: 500px;
+}
+
+.email-container .MuiInputLabel-root {
+  color: #8c8c8c;
+}
+
+.email-container .MuiFilledInput-root {
+  background: white !important;
+}
+
+.email-container .MuiInputLabel-shrink {
+  top: 0px !important;
+  color: #333 !important;
+}
+
+.email-container .MuiFormHelperText-root {
+  background: transparent !important;
+  margin: 0 0 10px 0 !important;
+  color: #ed6c02 !important;
+}
+
+.email-button:active {
+  background: rgba(200, 102, 150, 0.8) !important;
 }

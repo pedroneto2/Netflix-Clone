@@ -5,13 +5,26 @@ import { useContext } from "react";
 import LanguageCtx from "../../store/context/LanguageCtx";
 import AuthCtx from "../../store/context/AuthCtx";
 
+//for storybook usage:
+const storyBookLanguageCtx = {
+  languagePack: {
+    English: {
+      header: {
+        login: "Log In",
+        logout: "Log Out",
+      },
+    },
+  },
+  language: "English",
+};
+
 const handleClick = (authenticated, history, handleLogout) => {
   authenticated ? handleLogout() : history.push("/login");
 };
 
 const LogInOutBtn = ({ textColor, buttonBgColor }) => {
-  const { languagePack, language } = useContext(LanguageCtx);
-  const { authenticated, handleLogout } = useContext(AuthCtx);
+  const { languagePack, language } =useContext(LanguageCtx) || storyBookLanguageCtx;
+  const { authenticated, handleLogout } = useContext(AuthCtx) || {};
 
   const { login, logout } = languagePack[language].header;
 

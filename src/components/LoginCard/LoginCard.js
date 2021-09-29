@@ -26,7 +26,6 @@ const fakeValidateCredentials = (loginCredentials) => {
 
 const validateForm = (
   loginCredentials,
-  errors,
   setErrors,
   emailError,
   passwordError
@@ -35,37 +34,25 @@ const validateForm = (
 
   const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const invalidCredentials = {
-    email: [
-      {
-        invalidCredentials: !emailRegex.test(loginCredentials.email),
-        errorMsg: emailError,
-      },
-    ],
+    email: [!emailRegex.test(loginCredentials.email)],
     password: [
-      {
-        invalidCredentials: loginCredentials.password.length < 4,
-        errorMsg: passwordError,
-      },
-      {
-        invalidCredentials: loginCredentials.password.length > 60,
-        errorMsg: passwordError,
-      },
+      loginCredentials.password.length < 4,
+      loginCredentials.password.length > 60,
     ],
   };
 
   Object.keys(invalidCredentials).forEach((key) =>
-    invalidCredentials[key].find((inputCase) => {
-      if (inputCase.invalidCredentials) {
-        newErrors[key] = inputCase.errorMsg;
+    invalidCredentials[key].find((invalidCase) => {
+      if (invalidCase) {
+        const errorMsg = key === "email" ? emailError : passwordError;
+        newErrors[key] = errorMsg;
         return true;
       }
       return false;
     })
   );
 
-  Object.assign(errors, newErrors);
-
-  setErrors({ ...errors });
+  setErrors({ ...newErrors });
 };
 
 const handleSubmit = (
@@ -116,37 +103,28 @@ const LoginCard = ({
   help,
   emailError,
   passwordError,
+  testContext,
 }) => {
   const [loginCredentials, setLoginCredentials] = useState({
     ...credentialsInitialState,
   });
-
   const [values, setValues] = useState({
     showPassword: false,
     incorrectPassword: false,
   });
-
   const [errors, setErrors] = useState({
     email: "",
     password: "",
   });
-
   const [touched, setTouched] = useState({
     email: false,
     password: false,
   });
-
-  const { loading, handleLogin } = useContext(AuthCtx);
+  const { loading, handleLogin } = useContext(AuthCtx) || testContext;
 
   useEffect(() => {
-    validateForm(
-      loginCredentials,
-      errors,
-      setErrors,
-      emailError,
-      passwordError
-    );
-  }, [loginCredentials]);
+    validateForm(loginCredentials, setErrors, emailError, passwordError);
+  }, [loginCredentials, passwordError, emailError]);
 
   return (
     <div className="login-card-container">

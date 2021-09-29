@@ -3,7 +3,8 @@
     "countryCode": ["en"],
     "getStarted": {
       "text": "Ready to watch? Enter your email to create or restart your membership.",
-      "getStartedBtn": "Get Started"
+      "getStartedBtn": "Get Started",
+      "emailError": "Please enter a valid email."
     },
     "header": {
       "login": "Log In",
@@ -111,7 +112,8 @@
     "countryCode": ["pt", "br"],
     "getStarted": {
       "text": "Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.",
-      "getStartedBtn": "Vamos lá"
+      "getStartedBtn": "Vamos lá",
+      "emailError": "Informe um email válido."
     },
     "header": {
       "login": "Entrar",
@@ -209,8 +211,8 @@
       "signinBtn": "Entrar",
       "rememberMe": "Lembre-se de mim",
       "help": "Precisa de ajuda?",
-      "hide": "MOSTRAR",
-      "show": "OCULTAR",
+      "hide": "OCULTAR",
+      "show": "MOSTRAR",
       "emailError": "Informe um email válido.",
       "passwordError": "A senha deve ter entre 4 e 60 caracteres."
     }

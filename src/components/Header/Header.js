@@ -21,6 +21,7 @@ const Header = ({
   introText02,
   getStartedBtn,
   getStartedText,
+  emailError,
   lanGlobeIconMaxHeight,
 }) => {
   return (
@@ -47,6 +48,7 @@ const Header = ({
         <GetStarted
           getStartedBtn={getStartedBtn}
           getStartedText={getStartedText}
+          emailError={emailError}
           textColor={textColor}
           buttonBgColor={buttonBgColor}
         />
@@ -71,6 +73,7 @@ Header.propTypes = {
   introText02: PropTypes.string,
   getStartedBtn: PropTypes.string,
   getStartedText: PropTypes.string,
+  emailError: PropTypes.string,
   lanGlobeIconMaxHeight: PropTypes.string,
 };
 
@@ -89,5 +92,6 @@ Header.defaultProps = {
   getStartedText: "Get Started",
   emailText:
     "Ready to watch? Enter your email to create or restart your membership.",
+  emailError: "Please insert a valid email.",
   lanGlobeIconMaxHeight: "10px",
 };

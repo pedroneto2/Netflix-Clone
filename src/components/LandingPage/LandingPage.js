@@ -35,6 +35,7 @@ const LandingPage = () => {
         introText02={languagePack[language].header.introText02}
         getStartedBtn={languagePack[language].getStarted.getStartedBtn}
         getStartedText={languagePack[language].getStarted.text}
+        emailError={languagePack[language].getStarted.emailError}
         lanGlobeIconMaxHeight="12px"
       />
       <FeatureBox
@@ -111,6 +112,7 @@ const LandingPage = () => {
         FAQText={languagePack[language].FAQ}
         getStartedBtn={languagePack[language].getStarted.getStartedBtn}
         getStartedText={languagePack[language].getStarted.text}
+        emailError={languagePack[language].getStarted.emailError}
         textColor="white"
         buttonBgColor="red"
       />
