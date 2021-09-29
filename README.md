@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# NETFLIX-CLONE
+
+## You can access the deployment of this project through this link: https://pedro-netflix-clone.netlify.app/
+
+## features:
+              * responsive
+              * fake Login
+              * private route /home
+              * storybook
+              * LoginCard.js component tested with jest
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
